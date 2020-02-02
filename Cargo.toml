@@ -1,0 +1,21 @@
+[package]
+name = "usbd-webusb-blinky"
+version = "0.1.0"
+authors = ["Matti Virkkunen <mvirkkunen@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.6.0"
+cortex-m-rt = "0.6.8"
+cortex-m-rtfm = "0.5.1"
+embedded-hal = "0.2.0"
+nb = "0.1.2"
+stm32f1xx-hal = { version = "0.5.3", features = ["stm32f103", "rt", "stm32-usbd"] }
+stm32-usbd = { version = "0.5.0" }
+panic-semihosting = "0.5.2"
+usb-device = "0.2.4"
+usbd-webusb = "1.0.0"
+
+#[dependencies.usbd-webusb]
+#git = "https://github.com/redpfire/usbd-webusb"
+#rev = "1bb2483aa4e03ef8f6e45745918399c52b3d00ca"
